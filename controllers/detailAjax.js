@@ -66,7 +66,7 @@ let renderApiRelateproduct = (arr) => {
                     <h3 class="product-name">${sp.name}</h3>
                     <span class="product-desc">${sp.shortDescription}</span>
                     <div class="buy">
-                        <a href="./detail.html?productid=${count}" class="btnBuy">Buy Now</a>
+                        <a href="./detail.html?productid=${sp.id}" class="btnBuy">Buy Now</a>
                         <button class="price">${sp.price}</button>
                     </div>
                 </div>`
