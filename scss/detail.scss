@@ -1,0 +1,243 @@
+* {
+    font-family: 'Roboto Serif', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    background-color: #000000;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+        .logo {
+            img {
+                width: 100%;
+            }
+        }
+        .login {
+            img {
+                padding-right: 15px;
+                width: 20%;
+            }
+            a {
+                padding-right: 15px;
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 19px;
+                text-decoration: none;
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+.navbar {
+    .container {
+        .menu {
+            a {
+                color: #000000;
+                font-size: 25px;
+                font-weight: 300;
+                padding-right: 30px;
+                position: relative;
+                &::before {
+                    content: "";
+                    width: 70%;
+                    height: 1px;
+                    background-color: #000000;
+                    position: absolute;
+                    left: 0;
+                    bottom: -5px;
+                    transform: scale(0, 1);
+                    transition: transform 0.3s;
+                }
+                &:hover {
+                    &::before {
+                        transform: scale(1, 1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.Product-detail {
+    margin: 50px 0;
+    .container {
+        display: flex;
+        .left {
+            background-color: #F8F8F8;
+            position: relative;
+            width: 30%;
+            img {
+                width: 80%;
+                position: absolute;
+                top: 10%;
+                left: 10%;
+            }
+        }
+        .right {
+            width: 55%;
+            padding-left: 150px;
+            h2 {
+                font-size: 36px;
+                font-weight: 300;
+            }
+            span {
+                color: #000000;
+                font-size: 12px;
+            }
+            h5 {
+                padding-top: 10px;
+            }
+            .size {
+                padding-top: 10px;
+                button {
+                    padding: 5px 10px;
+                    font-size: 16px;
+                    background-color: #CCCCCC;
+                    border: solid 0px;
+                }
+            }
+            .amount {
+                padding: 10px 0;
+                .add1 {
+                    padding: 5px 10px;
+                    font-size: 16px;
+                    background-image: linear-gradient(to bottom right, rgb(103, 134, 244), rgb(101, 132, 244));
+                    border: solid 0px;
+                }
+                .remove1 {
+                    padding: 5px 10px;
+                    font-size: 16px;
+                    background-image: linear-gradient(to bottom right, rgb(103, 134, 244), rgb(101, 132, 244));
+                    border: solid 0px;
+                }
+            }
+        }
+        .AddToCart {
+            padding: 10px 20px;
+            background-image: linear-gradient(to right, rgb(205, 23, 238), rgb(81, 54, 248));
+            border: solid 0px;
+            color: #ffffff;
+        }
+    }
+}
+
+.Relate-product {
+    margin: 50px 0;
+    .container {
+        .title {
+            h2 {
+                text-align: center;
+            }
+        }
+        .row {
+            display: flex;
+            flex-direction: row;
+            .item {
+                background-color: #F8F8F8;
+                width: 30%;
+                margin: 15px;
+                img {
+                    width: 80%;
+                    position: relative;
+                    left: 10%;
+                }
+                h3 {
+                    font-Weight: 300;
+                    font-size: 24px;
+                    line-height: 29.05px;
+                }
+                span {
+                    color: #000000;
+                    font-size: 12px;
+                }
+                .buy {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    width: 100%;
+                    .btnBuy {
+                        width: 100%;
+                        height: 60px;
+                        background-color: rgb(255, 176, 103);
+                        text-decoration: none;
+                        text-align: center;
+                        color: #000000;
+                        line-height: 60px;
+                        margin-left: -12px;
+                    }
+                    .price {
+                        width: 100%;
+                        height: 60px;
+                        background-color: #DEDDDC;
+                        border: solid 0px;
+                        margin-right: -12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.AboutUs {
+    .container {
+        padding: 15px 0;
+        .row {
+            display: flex;
+            .col {
+                width: calc(100%/3);
+                h4 {
+                    color: #000000;
+                    font-weight: bolder;
+                    font-size: 16px;
+                }
+                p {
+                    color: #000000;
+                    font-size: 12px;
+                }
+                a {
+                    text-decoration: none;
+                    color: red;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+.infor {
+    background-color: #ECECEC;
+    .container {
+        padding: 15px 0;
+        .row {
+            display: flex;
+            .col {
+                width: calc(100%/3);
+                h4 {
+                    color: #000000;
+                    font-weight: bolder;
+                    font-size: 16px;
+                }
+                p {
+                    color: #000000;
+                    font-size: 12px;
+                }
+                a {
+                    text-decoration: none;
+                    color: red;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

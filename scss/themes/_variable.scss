@@ -1,0 +1,49 @@
+//  chứa các biến và mixin
+$text-c1-primary: #2a73dd;
+$text-c1-dark: #000;
+$text-c1-light: #fff;
+$text-c1-orange:#ff5722;
+
+$text-xs: 14px;
+$text-base: 16px;
+$text-xl: 18px;
+$text-2xl: 20px;
+$text-2-3-xl:24px;
+$text-3xl: 30px;
+$text-4xl: 40px;
+$text-5xl: 50px;
+$text-6xl: 60px;
+
+$text-ex-light:200;
+$text-light: 300;
+$text-regular: 400;
+$text-semibold: 600;
+$text-bold: 700;
+
+/*  
+    background:
+*/
+$bg-c1-primary: #F8B653;
+$bg-c1-light: #f5f5f5;
+$bg-c2-light:#DEDDDC;
+$bg-c3-light:#f8f8f8;
+$bg-c4-light:#CBC9C9;
+$bg-c-dark:#000000;
+$bg-transparent: transparent;
+// Hàm trong scss(mixin)
+@mixin text($fz: $text-base, $fw: $text-regular, $c: $text-c1-dark) {
+    font-size: $fz;
+    font-weight: $fw;
+    color: $c;
+}
+
+@mixin button($fz, $fw, $c, $bg, $pd,) {
+    // font-size: 16px;
+    // font-weight: 600;
+    // color: #000;
+    border: none;
+    @include text($fz, $fw, $c);
+    background: $bg;
+    padding: $pd;
+    cursor: pointer;
+}

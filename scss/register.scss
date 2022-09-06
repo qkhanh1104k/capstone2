@@ -1,0 +1,167 @@
+* {
+    font-family: 'Roboto Serif', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    background-color: #000000;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+        .logo {
+            img {
+                width: 100%;
+            }
+        }
+        .login {
+            img {
+                padding-right: 15px;
+                width: 20%;
+            }
+            a {
+                padding-right: 15px;
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 19px;
+                text-decoration: none;
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+.navbar {
+    .container {
+        .menu {
+            a {
+                color: #000000;
+                font-size: 25px;
+                font-weight: 300;
+                padding-right: 30px;
+                position: relative;
+                &::before {
+                    content: "";
+                    width: 70%;
+                    height: 1px;
+                    background-color: #000000;
+                    position: absolute;
+                    left: 0;
+                    bottom: -5px;
+                    transform: scale(0, 1);
+                    transition: transform 0.3s;
+                }
+                &:hover {
+                    &::before {
+                        transform: scale(1, 1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.register {
+    padding: 20px 0;
+    .container {
+        .title {
+            h2 {
+                font-size: 30px;
+                font-weight: 500;
+                text-align: center;
+            }
+        }
+        .row {
+            display: flex;
+            justify-content: space-around;
+            .col {
+                width: 50%;
+                input {
+                    font-size: 40px;
+                    margin: 20px 0;
+                    border-bottom: 5px solid rgb(174, 24, 226);
+                    border-top: none;
+                    border-left: none;
+                    border-right: none;
+                }
+                label {
+                    font-size: 40px;
+                    margin: 20px 0;
+                }
+                button {
+                    font-size: 40px;
+                    margin: 20px 0;
+                    width: 50%;
+                    height: 80px;
+                    background-color: rgb(174, 24, 226);
+                    border: solid 0px;
+                    transition: 0.5s;
+                    &:hover {
+                        background-color: rgb(13, 153, 255);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.AboutUs {
+    .container {
+        padding: 15px 0;
+        .row {
+            display: flex;
+            .col {
+                width: calc(100%/3);
+                h4 {
+                    color: #000000;
+                    font-weight: bolder;
+                    font-size: 16px;
+                }
+                p {
+                    color: #000000;
+                    font-size: 12px;
+                }
+                a {
+                    text-decoration: none;
+                    color: red;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+.infor {
+    background-color: #ECECEC;
+    .container {
+        padding: 15px 0;
+        .row {
+            display: flex;
+            .col {
+                width: calc(100%/3);
+                h4 {
+                    color: #000000;
+                    font-weight: bolder;
+                    font-size: 16px;
+                }
+                p {
+                    color: #000000;
+                    font-size: 12px;
+                }
+                a {
+                    text-decoration: none;
+                    color: red;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
